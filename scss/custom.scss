@@ -1,0 +1,48 @@
+$yellow: #f7f697;
+$blue: #2f7bab;
+
+
+.single-product {
+  position: fixed;
+  z-index: 100;
+  background-color: aliceblue;
+  border: $blue 1px solid;
+  border-radius: 16px;
+  padding: 1rem;
+  max-width: 30rem;
+  top: 8rem;
+    &.hidden {
+      display: none;
+    }
+}
+.single-product-content img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.categories a {
+  display: block;
+  background-color: $yellow;
+  border: 1px solid $blue;
+  padding: .5rem 1rem;
+    &:hover,
+    &.active {
+      background-color: #2f7bab;
+      color: $yellow;
+    }
+}
+
+.right {
+  padding-bottom: 2rem;
+}
+
+#page-counter,
+.button {
+  float: right;
+  margin: 0.2rem;
+}
+
+#page-counter {
+  margin-top: 2.5rem;
+  font-size: small;
+}

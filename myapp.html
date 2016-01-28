@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> | TEST | </title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/handlebars/handlebars.js"></script>
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="small-5 medium-offset-4 columns">
+
+        <div class="single-product hidden"></div>
+
+        <script id="singleProduct-modal-template" type="text/x-handlebars-template">
+          <div class="single-product-content">
+            <img src="{{thumbnailImage}}" alt="{{name}}" />
+            <h3>{{name}}</h3>
+            <p>{{price}}</p>
+            <p>{{shortDescription}}</p>
+            <div id="close" class="button">CLOSE</div>
+          </div>
+        </script>
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="medium-3 columns left">
+        <div class="categories">
+            <h2>Categories</h2>
+        </div>
+      </div>
+
+      <script id="categories-template" type="text/x-handlebars-template">
+        {{#each subCategories}}
+          <a id="{{id}}">{{name}}</a>
+        {{/each}}
+      </script>
+
+      <div class="medium-9 columns right">
+        <div class="products">
+          <h2>Products</h2>
+          <ul class="small-block-grid-4"></ul>
+          <div id="next" class="button">Next</div>
+          <div id="prev" class="button" disabled>Prev</div>
+          <div id="page-counter"></div>
+        </div>
+      </div>
+
+      <script id="products-template" type="text/x-handlebars-template">
+        {{#each products}}
+          <li class="product listing">
+            <a id="{{sku}}"><img src="{{thumbnailImage}}"></a>
+            <a id="{{sku}}">
+              {{name}}</a>
+          </li>
+        {{/each}}
+      </script>
+
+
+
+  </div>
+  <script src="js/myapp.js"></script>
+</body>
+</html>
