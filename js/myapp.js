@@ -90,7 +90,7 @@ $(function () {
 
   $("#next").on('click', function() {
     currentCatID = categoryID;
-    pageTracker++
+    pageTracker++;
     enableDisablePrev();
     enableDisableNext();
     getProducts(currentCatID);
@@ -98,7 +98,7 @@ $(function () {
 
   $("#prev").on('click', function() {
     currentCatID = categoryID;
-    pageTracker--
+    pageTracker--;
     enableDisablePrev();
     enableDisableNext();
     getProducts(currentCatID);
