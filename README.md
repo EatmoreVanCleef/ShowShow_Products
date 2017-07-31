@@ -2,7 +2,7 @@ A little app that collects data from the API of a National Electronics Chain and
 
 AJAX queries! Pagination! Modals! Oh My!
 
-Written in JavaScript using Handlebars for templating and Foundation/SASS for some basic styling.
+Written in jQuery using Handlebars for templating and Foundation/SASS for some rudimentary styling.
 
 To get started:
   1. run "bower install" to install components  
